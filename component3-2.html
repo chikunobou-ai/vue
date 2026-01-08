@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Vue2 Example</title>
+  <meta charset="utf-8">
+  <title>Vue3 サンプル</title>
 </head>
 <body>
 
@@ -14,24 +14,8 @@
   ></blog-post>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-<script>
-Vue.component('blog-post', {
-  props: ['title'],
-  template: '<h4>{{ title }}</h4>'
-});
-
-new Vue({
-  el: '#blog-posts-demo',
-  data: {
-    posts: [
-      { id: 1, title: 'Vueとの航海' },
-      { id: 2, title: 'Vueとの旅' },
-      { id: 3, title: 'Vue旅行記' }
-    ]
-  }
-});
-</script>
+<script src="https://unpkg.com/vue@3.5.0/dist/vue.global.js"></script>
+<script src="component3-2.js"></script>
 
 </body>
 </html>
